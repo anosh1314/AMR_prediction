@@ -18,11 +18,12 @@ Public dataset from Moradigaravand et al. (2018), "Prediction of antibiotic resi
 
 ## Results (held-out 20%)
 
-| Model         |     Accuracy   |   Balanced accuracy   |   ROC-AUC |
+| Model | Accuracy | Balanced accuracy | ROC-AUC |
+|---|---|---|---|
+| Logistic regression | 0.922 | 0.896 | 0.949 |
+| Random forest | 0.943 | 0.893 | 0.968 |
+| Gradient boosting | 0.941 | 0.900 | 0.972 |
 
-| Logistic regression |  0.922   |   0.896                | 0.949 |
-| Random forest       |   0.943  |   0.893                | 0.968 |
-| Gradient boosting   |   0.941  |   0.900                | 0.972 |
 
 ## Feature importance
 The top random forest features included genes that appear to be linked to mobile genetic elements (e.g., toxin-antitoxin genes `pemI` and `chpS`), prophage-associated genes, and the chloramphenicol resistance gene `cat`. This suggests the model partly captures lineages and plasmid-carrying strains rather than direct ciprofloxacin resistance mechanisms. I did not test this explanation.
